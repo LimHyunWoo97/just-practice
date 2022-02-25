@@ -1,0 +1,27 @@
+UI 만드는법
+미리 디자인해놓고 숨기기
+버튼 누르거나 특정이벤트시 보이게하는방법
+줄에 드래그 후 ctrl+e 누르면 css 만드는 창이 나옴 
+
+<!DOCTYPE   html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Document</title>
+        <link rel ="stylesheet" href="default.css">
+    </head> 
+    <body> 
+        <div class = "alert-box" id = "alert"> 
+            <p>Alert 박스</p>
+            <button  onclick = " document.getElementById('alert').style.display = 'none'; ">닫기</button>
+        </div>
+            <button onclick = " document.getElementById('alert').style.display = 'block'; ">버튼</button> 
+            <!-- onclick = "자바 스크립트 실행해주는거" -->
+
+        <script>
+         
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE   html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Document</title>
+    </head> 
+    <body> 
+        <h2 id ="hello">안녕하세요</h2>
+        <h2 id ="hi">올때 메로나</h2>
+
+        <script>
+           document.getElementById('hello').innerHTML = '안녕';  // = 는 오른쪽 요소를 왼쪽으로 대입해주세요 같은 개념 <= (화살표같은 개념)
+           // document(웹문서).(~의)getElement(ById(ID에 의해서))().(~의)innerHTML(HTML 요소를 가져와)
+           //셀렉터: document.getElementById('???').zzz = 'xxx'; ???,zzz,xxx를 잘 채우면 원하는대로 변경가능 (색상, 패딩, 마진 ,사이즈 등등)
+           // zzz ,xxx 경우는 구글 검색하면서 찾아봐
+           document.getElementById('hi').innerHTML = '올때 바밤바';
+           document.getElementById('hello').style.fontSize = '30px'; 
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE   html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Document</title>
+        <link rel ="stylesheet" href="default.css">
+    </head> 
+    <body>
+        
+        <div class = "alert-box" id = "alert"> 
+            <p id = "title">Alert박스</p>
+            <button  id="close">X</button>
+        </div>
+            <button onclick = " 알림창열기('아이디를 입력하세요');">버튼1</button>
+            <button onclick = " 알림창열기('비번을 입력하세요');">버튼2</button> 
+            <!-- onclick = "자바 스크립트 실행해주는거" -->
+        
+       
+        <script>
+        
+        document.getElementById('close').addEventListener('click',function(){ //click <-이벤트 문법
+            document.getElementById('alert').style.display ='none';
+        });
+
+        //   function 아무렇게나 작명(){} //아무렇게나 가능 ,긴코드를 깔끔하게 한단어로 축약하기위함 class id 와 같은개념
+        function 알림창(구멍){
+            document.getElementById('alert').style.display = 구멍;
+        }
+        
+        function 알림창열기(구멍){
+            document.getElementById('title').innerHTML = 구멍;           
+            document.getElementById('alert').style.display = 'block';
+        }
+       
+
+        </script>
+
+
+    </body>
+</html>

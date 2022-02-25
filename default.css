@@ -1,0 +1,18 @@
+.yellow-bg{
+    background: yellow;
+}
+
+.alert-box{
+    background: rgb(173, 173, 240);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+.close-box{
+    text-align: top, right;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
