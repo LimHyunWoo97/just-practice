@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>조건문-3</title>
+    <title>조건문-4</title>
 </head>
 <body>
     <script>
-        //2와 3의 공배수 검사 프로그램
-        var value = window.prompt("숫자를 입력해주세요");
-        
-        //prompt 는 string 타입 
-        //alert(typeof(value)); //string
-
-        // prompt()에서 받은 vlaue의 스트링 값을 정수형으로 변환(강제형변환)
-        value = parseInt(value);
-        //alert(typeof(value)); //number
-
-        if( (value % 2 == 0) && (value %3 ==0) ){
-            alert("2와 3의 공배수 입니다");
+        // 사용자로부터 입력받는 부분
+        var userID = window.prompt("아이디를 입력하세요");
+        var userPW = window.prompt("패스워드를 입력하세요");
+        // 값 비교
+        if(userID=="Lim" && userPW == "1234"){
+            alert(userID+"님이 로그인 하였습니다");
+        }
+        else if (userID == "Lim"){
+            alert("패스워드가 잘못 입력 되었습니다");
         }
         else{
-            alert("2와 3의 공배수가 아닙니다");
+            alert("아이디가 잘못 입력 되었습니다");
         }
     </script>
 </body>
