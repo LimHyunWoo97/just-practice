@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 입력</title>
+</head>
+<body>
+    <script>
+        //prompt 는 string으로 return
+        var input = prompt("숫자를 입력해 주세요", "숫자"); 
+        alert(typeof(input));
+        //Number()함수는 string을 숫자형으로 변환
+        var numType = Number(input);
+        alert(typeof(numType));
+        //NaN (Not a Number)숫자가 아닌 문자형 입력시 나오는 경고문
+        alert(numType);
+    </script>
+</body>
+</html>
