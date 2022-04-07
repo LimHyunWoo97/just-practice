@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue예제</title>
+</head>
+<body>
+    <script>
+        //2의 배수를 제외하고 다 출력하게끔 하는 코드 (홀수출력)
+        for(var i = 1; i<=100; i++){
+            //2의 배수인지 확인하는 코드
+            if(i % 2 == 0){
+                continue;
+            }
+            document.write(i+"</br>");
+        }
+    </script>
+</body>
+</html>
